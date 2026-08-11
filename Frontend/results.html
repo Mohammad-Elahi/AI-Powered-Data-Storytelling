@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Results</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars" id="btn"></i>
+    </label>
+    <label for="project-name" class="logo">AI Storytelling Project</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="compare.html">Compare Stories</a></li>
+      <li><a href="results.html" class="active">Results</a></li>
+    </ul>
+  </nav>
+  <section class="'home">
+    <div class="hero-section" style="justify-content: space-evenly; background-color: #eef7ff">
+      <div class="home-content">
+        <h1>Evaluation Results</h1>
+        <p>
+          This page presents the findings from the user study comparing
+          human-written and AI-generated data stories.
+        </p>
+      </div>
+      <div class="home-image">
+        <img src="./images/Evaluation_Results.avif" alt="Evaluation Results" />
+      </div>
+    </div>
+    <div class="study-overview-section">
+      <div class="section-header">
+        <h2>Study Overview</h2>
+        <p>
+          This study evaluates the effectiveness of human-written and
+          AI-generated data stories created from the Austin Animal Center
+          Outcomes dataset.
+        </p>
+      </div>
+
+      <div class="overview-container">
+        <div class="overview-card">
+          <h3>📊 Dataset</h3>
+          <p>
+            Austin Animal Center Outcomes dataset, focusing on pet adoption
+            trends during the COVID-19 period and animal abandonment trends in
+            the following years.
+          </p>
+        </div>
+
+        <div class="overview-card">
+          <h3>⚖️ Comparison</h3>
+          <p>
+            Participants compared a human-written story with an AI-generated
+            story based on the same dataset.
+          </p>
+        </div>
+
+        <div class="overview-card">
+          <h3>👥 Participants</h3>
+          <p>
+            Users were asked to read both stories and provide feedback through
+            an evaluation questionnaire.
+          </p>
+        </div>
+
+        <div class="overview-card">
+          <h3>🎯 Evaluation Criteria</h3>
+          <ul>
+            <li>Clarity</li>
+            <li>Emotional Engagement</li>
+            <li>Trustworthiness</li>
+            <li>Overall Quality</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="results-section">
+      <div class="dashboard-header">
+        <h2>Results Dashboard</h2>
+        <p>
+          A quick summary of participant preferences when comparing the
+          human-written and AI-generated stories.
+        </p>
+      </div>
+
+      <div class="dashboard-cards">
+        <!-- Card 1 -->
+        <div class="stat-card">
+          <h3>Guessed Human Correctly</h3>
+          <div class="stat-value" id="human-guess-pct">0%</div>
+          <p>Participants who correctly identified the human-written story.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="stat-card">
+          <h3>Guessed AI Correctly</h3>
+          <div class="stat-value" id="ai-guess-pct">0%</div>
+          <p>Participants who correctly identified the AI-generated story.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="stat-card">
+          <h3>Human Story Votes</h3>
+          <div class="stat-value" id="human-votes">0</div>
+          <p>Total votes received across all evaluation criteria.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="stat-card">
+          <h3>AI Story Votes</h3>
+          <div class="stat-value" id="ai-votes">0</div>
+          <p>Total votes received across all evaluation criteria.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="stat-card">
+          <h3>Most Dominant Criterion</h3>
+          <div class="stat-value" id="dominant-criterion">N/A</div>
+          <p>The category showing the strongest preference difference.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="stat-card">
+          <h3>Overall Preferred Story</h3>
+          <div class="stat-value" id="overall-winner">N/A</div>
+          <p>The story preferred by the majority of participants.</p>
+        </div>
+      </div>
+    </div>
+    <div class="charts-section">
+      <div class="charts-header">
+        <h2>📈 Evaluation Results</h2>
+        <p>
+          The following charts summarize participant feedback across the main
+          evaluation criteria.
+        </p>
+      </div>
+
+      <div class="charts-grid">
+        <!-- Chart 1 -->
+        <div class="chart-card">
+          <h3>Clarity Comparison</h3>
+
+          <div class="bar-group">
+            <span>Human Story</span>
+            <div class="bar human" id="clarity-human" style="width: 0%">0</div>
+          </div>
+
+          <div class="bar-group">
+            <span>AI Story</span>
+            <div class="bar ai" id="clarity-ai" style="width: 0%">0</div>
+          </div>
+        </div>
+
+        <!-- Chart 2 -->
+        <div class="chart-card">
+          <h3>Emotional Engagement</h3>
+
+          <div class="bar-group">
+            <span>Human Story</span>
+            <div class="bar human" id="emotion-human" style="width: 0%">0</div>
+          </div>
+
+          <div class="bar-group">
+            <span>AI Story</span>
+            <div class="bar ai" id="emotion-ai" style="width: 0%">0</div>
+          </div>
+        </div>
+
+        <!-- Chart 3 -->
+        <div class="chart-card">
+          <h3>Trustworthiness</h3>
+
+          <div class="bar-group">
+            <span>Human Story</span>
+            <div class="bar human" id="trust-human" style="width: 0%">0</div>
+          </div>
+
+          <div class="bar-group">
+            <span>AI Story</span>
+            <div class="bar ai" id="trust-ai" style="width: 0%">0</div>
+          </div>
+        </div>
+
+        <!-- Chart 4 -->
+        <div class="chart-card">
+          <h3>Overall Quality</h3>
+
+          <div class="bar-group">
+            <span>Human Story</span>
+            <div class="bar human" id="overall-human" style="width: 0%">0</div>
+          </div>
+
+          <div class="bar-group">
+            <span>AI Story</span>
+            <div class="bar ai" id="overall-ai" style="width: 0%">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Key-findings-section">
+      <div class="findings-header">
+        <h2>🔍 Key Findings</h2>
+        <p>
+          The evaluation highlights several interesting differences between
+          human-written and AI-generated storytelling approaches.
+        </p>
+      </div>
+
+      <div class="findings-container">
+        <div class="finding-card">
+          <h3>💙 Stronger Emotional Impact</h3>
+          <p>
+            Participants generally found the human-written story more
+            emotionally engaging and relatable.
+          </p>
+        </div>
+
+        <div class="finding-card">
+          <h3>🤖 Structured AI Narrative</h3>
+          <p>
+            The AI-generated story was perceived as well-organized and
+            effective at presenting data-driven information.
+          </p>
+        </div>
+
+        <div class="finding-card">
+          <h3>⚖️ Similar Trust Levels</h3>
+          <p>
+            Both stories achieved comparable trustworthiness scores,
+            suggesting that AI can communicate factual information reliably.
+          </p>
+        </div>
+
+        <div class="finding-card">
+          <h3>🏆 Overall Preference</h3>
+          <p>
+            Most participants preferred the human-written story due to its
+            stronger narrative flow and emotional connection.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/results-data');
+        const data = await response.json();
+        
+        if (data.success) {
+          // Update Dashboard cards
+          document.getElementById('human-votes').textContent = data.total_human_votes;
+          document.getElementById('ai-votes').textContent = data.total_ai_votes;
+          document.getElementById('dominant-criterion').textContent = data.dominant_criterion;
+          document.getElementById('overall-winner').textContent = data.overall_winner;
+          document.getElementById('human-guess-pct').textContent = data.guess_stats.human_correct_pct + '%';
+          document.getElementById('ai-guess-pct').textContent = data.guess_stats.ai_correct_pct + '%';
+
+          // Update Charts
+          const updateChart = (criterion, stats) => {
+            const humanBar = document.getElementById(`${criterion}-human`);
+            const aiBar = document.getElementById(`${criterion}-ai`);
+            
+            if (humanBar && aiBar) {
+              // Width based on percentage
+              humanBar.style.width = `${stats.human_pct}%`;
+              aiBar.style.width = `${stats.ai_pct}%`;
+              // Text value based on percentage
+              humanBar.textContent = `${stats.human_pct}%`;
+              aiBar.textContent = `${stats.ai_pct}%`;
+            }
+          };
+
+          updateChart('clarity', data.stats.clarity);
+          updateChart('emotion', data.stats.emotion);
+          updateChart('trust', data.stats.trust);
+          updateChart('overall', data.stats.overall);
+        } else {
+          console.log('No evaluation data yet.');
+        }
+      } catch (error) {
+        console.error('Error fetching results data:', error);
+      }
+    });
+  </script>
+</body>
+</html>

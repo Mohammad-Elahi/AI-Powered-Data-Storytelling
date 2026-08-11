@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars" id="btn"></i>
+      </label>
+      <label for="project-name" class="logo">AI Storytelling Project</label>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="compare.html">Compare Stories</a></li>
+        <li><a href="results.html">Results</a></li>
+      </ul>
+    </nav>
+    <section class="home">
+      <div class="hero-section">
+        <div class="home-content">
+          <h1>Welcome to the AI Storytelling Project</h1>
+          <p>
+            This project compares human-written and AI-generated stories based
+            on animal shelter data during and after the COVID-19 period.
+          </p>
+          <a href="compare.html" class="btn-home">Compare Stories</a>
+        </div>
+        <div class="home-image">
+          <img src="./images/home_image.png" alt="Home" />
+        </div>
+      </div>
+      <div class="dataset-section">
+        <div class="dataset-content">
+          <h1>Dataset</h1>
+          <h3>Austin Animal Center Outcomes</h3>
+          <p>
+            The dataset contains information about animal adoptions, transfers,
+            returns, and other shelter outcomes over several years.
+          </p>
+          <p>
+            Our project focuses on comparing pet adoption during COVID-19 with
+            abandonment trends in the following years.
+          </p>
+          <a href="https://data.austintexas.gov/" target="_blank">
+            Explore Dataset →
+          </a>
+        </div>
+        <div class="dataset-image">
+          <img src="./images/dataset-image.jpg" alt="Dataset" />
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img src="./images/storytelling-human.jpg" alt="Human Storytelling" />
+          <div class="card-content">
+            <h1>Human Storytelling</h1>
+            <p>A story manually written after analyzing the dataset.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/storytelling-ai.png" alt="Human Storytelling" />
+          <div class="card-content">
+            <h1>AI Storytelling</h1>
+            <p>
+              A story generated using Large Language Models and Agentic AI
+              techniques.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/evaluation.jpg" alt="Human Storytelling" />
+          <div class="card-content">
+            <h1>Evaluation</h1>
+            <p>Compare both stories and analyze user preferences.</p>
+          </div>
+        </div>
+      </div>
+      <div class="objective-section">
+        <div class="objective-content">
+          <h1>Project Objective</h1>
+          <p>
+            The objective of this project is to investigate whether AI-generated
+            stories can achieve similar levels of readability, trustworthiness,
+            and emotional engagement as stories written by humans.
+          </p>
+        </div>
+        <div class="objective-image">
+          <img src="./images/Project-Objective.png" alt="objective" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

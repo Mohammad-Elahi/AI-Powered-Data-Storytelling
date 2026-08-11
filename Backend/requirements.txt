@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+langchain-core
+langchain-google-genai
+numpy==2.5.1
+pandas==3.0.3
+pymupdf==1.28.0
+python-dateutil==2.9.0.post0
+six==1.17.0
+tzdata==2026.3

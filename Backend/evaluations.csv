@@ -1,0 +1,16 @@
+UserID,HumanGuess,AIGuess,Clarity,Emotion,Trust,Overall,Comments
+User1,storyA,storyB,storyA,storyA,storyA,storyA,
+User2,storyA,storyB,storyA,storyA,storyA,storyA,
+User3,storyA,storyB,storyA,storyA,storyA,storyA,
+User4,storyA,storyB,storyA,storyB,storyB,storyB,
+User5,storyB,storyA,storyA,storyB,storyB,storyA,
+User6,storyA,storyB,storyA,storyA,storyA,storyA,
+User7,storyA,storyB,storyA,storyA,storyA,storyA,
+User8,storyB,storyA,storyA,storyB,storyB,storyB,
+User9,storyA,storyB,storyA,storyA,storyA,storyA,The overly grand vocabulary of the second story sounded less human and emotional.
+User10,storyA,storyB,storyA,storyA,storyA,storyA,
+User11,storyB,storyA,storyA,storyA,storyB,storyB,
+User12,storyB,storyA,storyA,storyA,storyB,storyB,
+User13,storyA,storyB,storyA,storyA,storyA,storyA,
+User14,storyA,storyB,storyA,storyA,storyA,storyA,
+User15,storyA,storyB,storyA,storyA,storyA,storyA,
