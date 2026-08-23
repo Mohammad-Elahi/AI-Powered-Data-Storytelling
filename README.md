@@ -25,20 +25,16 @@ This project explores the difference between human-written and AI-generated stor
 Follow these steps to run the project on your local machine:
 
 ### 1. Start the Backend
-1. **Clone the Repository:** First, clone the project to your local machine:
+1. **Open your terminal or PowerShell and Navigate to the `Backend` directory:**
    ```bash
-   git clone https://github.com/Mohammad-Elahi/AI-Powered-Data-Storytelling.git
-   ```
-2. **Open your terminal or PowerShell and Navigate to the `Backend`directory:**
-   ```bash
-   cd AI-Powered-Data-Storytelling/Backend
+   cd Backend
    ```
    *(Tip for Windows users: You can also open the `Backend` folder, right-click in the empty space, and select **"Open in Terminal"**).*
-3. **Create a virtual environment (Mandatory):**
+2. **Create a virtual environment (Mandatory):**
    ```bash
    python -m venv venv
    ```
-4. **Activate the virtual environment:**
+3. **Activate the virtual environment:**
    - On Windows (Command Prompt):
      ```cmd
      venv\Scripts\activate.bat
