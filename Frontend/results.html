@@ -91,6 +91,13 @@
       </div>
 
       <div class="dashboard-cards">
+        <!-- Card 0 -->
+        <div class="stat-card">
+          <h3>Total Participants</h3>
+          <div class="stat-value" id="total-participants">0</div>
+          <p>Total number of users who participated in the evaluation.</p>
+        </div>
+
         <!-- Card 1 -->
         <div class="stat-card">
           <h3>Guessed Human Correctly</h3>
@@ -257,6 +264,7 @@
         
         if (data.success) {
           // Update Dashboard cards
+          document.getElementById('total-participants').textContent = data.total_responses;
           document.getElementById('human-votes').textContent = data.total_human_votes;
           document.getElementById('ai-votes').textContent = data.total_ai_votes;
           document.getElementById('dominant-criterion').textContent = data.dominant_criterion;
