@@ -57,7 +57,8 @@ Follow these steps to run the project on your local machine:
    ```bash
    pip install -r requirements.txt
    ```
-6. **Set your Gemini API key for this terminal session:**
+6. **(Optional) Set your Gemini API key:**
+   *Note: An API key is already pre-configured in `Backend/main.py` for evaluation purposes. You can skip this step and proceed to run the server.*
    - On Windows PowerShell:
      ```powershell
      $env:GOOGLE_API_KEY = "your-gemini-api-key"

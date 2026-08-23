@@ -32,7 +32,9 @@ df = pd.read_csv("animal_storytelling_dataset.csv")
 llm_flash = ChatGoogleGenerativeAI(model="gemini-3.1-flash-lite", temperature=0.2)
 
 # Powerful and creative model for emotional content generation (Agentic AI)
-llm_pro = ChatGoogleGenerativeAI(model="gemini-3.1-flash-lite", temperature=0.7)
+primary_llm = ChatGoogleGenerativeAI(model="gemini-3.1-pro-preview", temperature=0.7)
+fallback_llm = ChatGoogleGenerativeAI(model="gemini-3.1-flash-lite", temperature=0.7)
+llm_pro = primary_llm.with_fallbacks([fallback_llm])
 
 # 5. Define request structure coming from the frontend
 class StoryRequest(BaseModel):
