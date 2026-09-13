@@ -14,3 +14,11 @@ Thumbs.db
 # IDEs
 .vscode/
 .idea/
+
+# Secrets & Keys
+API_KEY*.txt
+*.key
+secrets.json
+
+# Local nested extraction folder
+AI-Powered-Data-Storytelling-main/

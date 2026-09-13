@@ -7,10 +7,22 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 import csv
 
-# 1. Temporary team configuration: use the shared Gemini key while the private
-# repository is under active development. Remove this line before delivery and
-# use the GOOGLE_API_KEY environment variable described in the README instead.
-os.environ["GOOGLE_API_KEY"] = "AQ.Ab8RN6JIcSChJrfh9GYXcgYcTGVNE3zlsnNs2Gmmo1WRrOsYPw"
+# ==============================================================================
+# 1. Google Gemini API Key Configuration
+# ------------------------------------------------------------------------------
+# To run this project, you must provide your own Google Gemini API key.
+# You can obtain a free API key from Google AI Studio: https://aistudio.google.com/
+#
+# Option A (Recommended): Set it as an environment variable in your terminal:
+#   - Windows PowerShell: $env:GOOGLE_API_KEY = "your-gemini-api-key"
+#   - Windows CMD:        set GOOGLE_API_KEY=your-gemini-api-key
+#   - macOS / Linux:      export GOOGLE_API_KEY="your-gemini-api-key"
+#
+# Option B: Paste your API key directly below (replace "YOUR_GEMINI_API_KEY_HERE"):
+# ==============================================================================
+if not os.environ.get("GOOGLE_API_KEY"):
+    os.environ["GOOGLE_API_KEY"] = "YOUR_GEMINI_API_KEY_HERE"
+
 
 # 2. Initialize FastAPI app
 app = FastAPI()
@@ -53,6 +65,13 @@ class EvaluationRequest(BaseModel):
 @app.post("/generate-story")
 async def generate_story(request: StoryRequest):
     try:
+        # Check if Gemini API key is configured
+        api_key = os.environ.get("GOOGLE_API_KEY", "")
+        if not api_key or api_key == "YOUR_GEMINI_API_KEY_HERE":
+            return {
+                "success": False,
+                "error": "Gemini API key is missing or set to placeholder. Please set your GOOGLE_API_KEY environment variable or enter your key in Backend/main.py."
+            }
 
         # =========================================
         # STEP 1: Data Preparation & Statistical Extraction
