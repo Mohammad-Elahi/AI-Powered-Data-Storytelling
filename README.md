@@ -1,4 +1,4 @@
-# AI-Powered Data Storytelling
+# AI-Powered Data Storytelling / *[IMLD](https://imld.de/en/) - TU Dresden*
 
 This project explores the difference between human-written and AI-generated stories based on raw data. It transforms complex structured data from the [Austin Animal Center Outcomes dataset](https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Outcomes-10-01-2013-to-05-05-/9t4d-g238/about_data) into accessible, natural language narratives. For the AI generation pipeline, the project employs a general LLM for data analysis and initial story generation, paired with an **Agentic LLM to moderate and enhance the emotional content** of the narrative. Finally, it provides an interactive interface for users to compare both versions and evaluate their quality, emotional engagement, and trustworthiness through a user study.
 
