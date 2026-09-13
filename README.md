@@ -35,7 +35,6 @@ cd AI-Powered-Data-Storytelling
    ```bash
    cd Backend
    ```
-   *(Tip for Windows users: You can also open the `Backend` folder, right-click in the empty space, and select **"Open in Terminal"**).*
 
 2. **Create a virtual environment (Mandatory):**
    ```bash
